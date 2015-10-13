@@ -23,7 +23,6 @@ class CroppedImageAdminColumn
         $meta = json_decode($meta);
 
         if (isset($meta->cropped_image)) {
-            $meta = "{$meta->cropped_image}";
             return $object->get_value_by_meta($meta, $id);
         }
 
